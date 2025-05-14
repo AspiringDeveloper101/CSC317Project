@@ -6,3 +6,7 @@ For this assignment, we created a task manager web application.
 
 ## Contributors
 
+Trinity Godwin
+Phong Nguyen
+Serena Liu
+Joey Lee
