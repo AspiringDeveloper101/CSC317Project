@@ -2,7 +2,8 @@
 
 ## Overview
 
-For this assignment, we created a task manager web application.
+For this assignment, we created a task manager web application. Our goal is to allow the user to add a title and description of the task they need and display in an organize way for
+them below. 
 
 ## Features
     - Registering for an account
