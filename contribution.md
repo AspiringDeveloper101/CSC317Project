@@ -18,6 +18,7 @@
 ## Serena Liu:
 - Made README file
 - Set up render and mongoDB
+- changed styling of the navigation, text, and background color
 
 ## Joey Lee:
 
