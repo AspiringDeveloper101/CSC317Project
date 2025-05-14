@@ -14,7 +14,7 @@ them below.
 
 ## Team Responsibilities
     - Setting up MongoDB & Render 
-        - Serena Liu, 
+        - Serena Liu 
     - Creating README file 
         - Serena Liu
     - Web application functionality and features
