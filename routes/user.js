@@ -34,4 +34,6 @@ router.post('/new-event', scheduleController.postEvent);
 // GET /user/events - Get user Events
 router.get('/events', scheduleController.getEvents)
 
+router.delete('/events/:id', scheduleController.deleteEvent);
+
 module.exports = router;

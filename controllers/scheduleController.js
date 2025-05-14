@@ -42,4 +42,27 @@ exports.getEvents = async (req, res, next) => {
   } catch (error) {
     next(error);
   }
+  
+};
+
+//handle deleting events
+exports.deleteEvent = async (req, res, next) => {
+  try {
+    const userId = req.session.user.id;
+    const eventId = req.params.id;
+
+    const deletedEvent = await Event.findOneAndDelete({
+      _id: eventId,
+      userId: userId
+    });
+
+    if (!deletedEvent) {
+      return res.status(404).json({ message: 'Event not found or not authorized' });
+    }
+
+    res.sendStatus(200);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Server error deleting event' });
+  }
 };
