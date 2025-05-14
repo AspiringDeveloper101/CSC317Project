@@ -8,13 +8,8 @@
 }
 
 :root {
-<<<<<<< HEAD
   --primary-color: #4A90E2;
   --primary-dark: #357ABD;
-=======
-  --primary-color: #3498db;
-  --primary-dark: #005481;
->>>>>>> 507859d687bf61c166c103801773bc06fbfcbf86
   --secondary-color: #2ecc71;
   --secondary-dark: #27ae60;
   --text-color: #3498db;
