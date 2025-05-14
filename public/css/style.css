@@ -562,3 +562,38 @@ details pre {
     margin-bottom: 0.5rem;
   }
 }
+
+.delete-btn {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  padding: 6px 12px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #e60000;
+  transform: scale(1.05);
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  min-height: 160px; 
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+}
