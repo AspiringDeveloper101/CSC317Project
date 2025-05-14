@@ -19,19 +19,30 @@
     <h2>Your Events</h2>
     <div class="feature-grid">
       <script>
+        // finds the div this code resides in
         let currentDiv = document.getElementsByClassName("feature-grid")[0];
+        // get request to user/events 
         fetch('user/events')
+          // jsonify the response
           .then(response => response.json())
+          /*
+          * This code block takes each JSON object representing the task of a user
+          * and constructs a 'feature-card' div to display on the users home page 
+          */
           .then(events => {
             events.forEach((event) => {
+              // create card div
               let newDiv = document.createElement("div");
               newDiv.classList.add("feature-card");
+              // create title header
               let title = document.createElement("h3");
               title.textContent = event.title;
               newDiv.appendChild(title);
               newDiv.appendChild(document.createElement("br"));
+              // description
               newDiv.appendChild(document.createTextNode(event.description));
               newDiv.appendChild(document.createElement("br"));
+              // take time stamp and slice time and leave only date
               newDiv.appendChild(document.createTextNode(event.dueDate.slice(0, 10)));
               currentDiv.appendChild(newDiv);
             });
