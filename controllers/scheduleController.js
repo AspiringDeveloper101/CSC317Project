@@ -42,7 +42,6 @@ exports.getEvents = async (req, res, next) => {
   } catch (error) {
     next(error);
   }
-<<<<<<< HEAD
   
 };
 
@@ -67,6 +66,3 @@ exports.deleteEvent = async (req, res, next) => {
     res.status(500).json({ message: 'Server error deleting event' });
   }
 };
-=======
-};
->>>>>>> f9a930af7f6625eb1cb021e1263af40cd234a374

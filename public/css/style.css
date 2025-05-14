@@ -597,3 +597,22 @@ details pre {
 .feature-card:hover {
   transform: translateY(-4px);
 }
+
+input[type="date"] {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  width: 100%;
+  max-width: 300px;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="date"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
